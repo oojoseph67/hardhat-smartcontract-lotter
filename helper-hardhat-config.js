@@ -25,13 +25,15 @@ const networkConfig = {
   //   },
 };
 
-const developmentChains = ["hardhat", "localhost"];
-// const DECIMALS = 8;
-// const INITIAL_ANSWER = 200000000000;
+const VERIFICATION_BLOCK_CONFIRMATIONS = 6;
+const frontEndContractsFile =
+  "../nextjs-smartcontract-lottery/constants/contractAddresses.json";
+const frontEndAbiFile = "../nextjs-smartcontract-lottery/constants/abi.json";
 
 module.exports = {
   networkConfig,
   developmentChains,
-//   DECIMALS,
-//   INITIAL_ANSWER,
+  VERIFICATION_BLOCK_CONFIRMATIONS,
+  frontEndContractsFile,
+  frontEndAbiFile,
 };
